@@ -1,4 +1,5 @@
 import "./LandingPage.css";
+import { Link } from "react-router-dom";
 
 const LandingPage = () => {
   return (
@@ -13,8 +14,8 @@ const LandingPage = () => {
           <li><a href="#">Contact Us</a></li>
         </ul>
         <div className="nav-buttons">
-          <a href="#" className="login">Log In</a>
-          <a href="#" className="signup">Sign Up</a>
+          <Link to="/login" className="login">Log In</Link>
+          <Link to="/register" className="signup">Sign Up</Link>
         </div>
       </nav>
 
@@ -26,7 +27,7 @@ const LandingPage = () => {
           Our expert guidance will optimize your financial portfolio and lay the foundation for a secure and prosperous future.
         </p>
         <div className="hero-buttons">
-          <button className="btn primary">Get Started</button>
+          <Link to="/register" className="btn primary">Get Started</Link>
           <button className="btn secondary">Try Demo</button>
         </div>
       </header>
